@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <main className="flex w-9/12 gap-6 bg-amber-300 text-center justify-around items-center m-6 py-3 rounded-2xl absolute left-1/2 -translate-x-1/2">
+      <main className="flex w-9/12 gap-6 bg-amber-300 text-center justify-around items-center m-6 py-3 rounded-2xl absolute fixed left-1/2 -translate-x-1/2">
         <div id="logo">Logo</div>
         <article className="gap-2 bg-blue-800 ">
           <nav className="flex gap-12">

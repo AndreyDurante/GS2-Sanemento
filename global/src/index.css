@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-verde-agua: #00d6b5;
+}
+
+.repetido {
+    background-image: url('./assets/rio_verdeCHAT.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21% auto;
+    background-position: center -1px;
+}
