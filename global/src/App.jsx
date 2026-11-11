@@ -41,29 +41,35 @@ function App() {
             </p>
           </article>
 
-          <div className="flex w-full flex-col items-center gap-5 sm:gap-8 md:grid md:grid-cols-2 md:grid-rows-4 md:gap-x-8 md:gap-y-8 lg:gap-x-12 lg:gap-y-10">
-            <div className="w-full flex justify-center md:justify-end md:col-start-1 md:row-start-1">
+          <div className="relative flex w-full flex-col items-center gap-5 sm:gap-8 md:grid md:grid-cols-2 md:grid-rows-4 md:gap-x-8 md:gap-y-8 lg:gap-x-12 lg:gap-y-10">
+            <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-1/2 z-0 w-[3px] -translate-x-1/2 rounded-full bg-blue-500/80" />
+            
+            <div className="relative z-10 w-full flex justify-center md:justify-end md:col-start-1 md:row-start-1">
+              <span aria-hidden="true" className="absolute top-1/2 z-20 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-blue-500 bg-gray-50 dark:bg-gray-950 md:left-[calc(100%_+_1rem)] md:block lg:left-[calc(100%_+_1.5rem)]" />
               <CardComImagem
                 titulo="01. Esgoto a céu aberto"
                 subtitulo="A falta de coleta e tratamento de esgoto contamina rios, solos e comunidades."
               />
             </div>
 
-            <div className="w-full flex justify-center md:justify-start md:col-start-2 md:row-start-2">
+            <div className="relative z-10 w-full flex justify-center md:justify-start md:col-start-2 md:row-start-2">
+              <span aria-hidden="true" className="absolute right-[calc(100%_+_1rem)] top-1/2 z-20 hidden h-4 w-4 translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-blue-500 bg-gray-50 dark:bg-gray-950 md:block lg:right-[calc(100%_+_1.5rem)]" />
               <CardComImagem
                 titulo="02. Falta de água potável"
                 subtitulo="Milhares de pessoas enfrentam dificuldades para ter acesso à água limpa e segura."
               />
             </div>
 
-            <div className="w-full flex justify-center md:justify-end md:col-start-1 md:row-start-3">
+            <div className="relative z-10 w-full flex justify-center md:justify-end md:col-start-1 md:row-start-3">
+              <span aria-hidden="true" className="absolute top-1/2 z-20 hidden h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-blue-500 bg-gray-50 dark:bg-gray-950 md:left-[calc(100%_+_1rem)] md:block lg:left-[calc(100%_+_1.5rem)]" />
               <CardComImagem
                 titulo="03. Drenagem urbana precária"
                 subtitulo="A ausência de sistemas adequados de drenagem favorece alagamentos e prejuízos à população."
               />
             </div>
 
-            <div className="w-full flex justify-center md:justify-start md:col-start-2 md:row-start-4">
+            <div className="relative z-10 w-full flex justify-center md:justify-start md:col-start-2 md:row-start-4">
+              <span aria-hidden="true" className="absolute right-[calc(100%_+_1rem)] top-1/2 z-20 hidden h-4 w-4 translate-x-1/2 -translate-y-1/2 rounded-full border-[3px] border-blue-500 bg-gray-50 dark:bg-gray-950 md:block lg:right-[calc(100%_+_1.5rem)]" />
               <CardComImagem
                 titulo="04. Doenças relacionadas à falta de saneamento"
                 subtitulo="A falta de saneamento aumenta a exposição a doenças e coloca a saúde pública em risco."
