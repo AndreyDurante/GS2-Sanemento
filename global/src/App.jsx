@@ -1,8 +1,8 @@
 import "./App.css";
 import CardComImagem from "./components/CardComImagem.jsx";
-import Carrossel from "./components/Carrossel.jsx";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Etapas from "./components/Etapas.jsx";
 
 function App() {
   return (
@@ -81,12 +81,12 @@ function App() {
               Tecnologias sustentáveis e projetos integrados para transformar a realidade do saneamento básico e da saúde nas comunidades.
             </p>
           </article>
-          <main className="h-165 w-10/12 grid grid-cols-5 bg-black gap-4">
-            <div className="h-11/12 flex justify-center items-center w-11/12 m-6 col-span-3 bg-amber-600">
-            b
+          <main className="w-11/12 max-w-7xl grid grid-cols-1 lg:grid-cols-5 gap-6 items-center">
+            <div className="flex justify-center items-center w-full lg:col-span-3">
+              b
             </div>
-            <div id="selecao-solucao" className="h-11/12 flex justify-center items-center w-11/12 m-6 col-start-4 col-span-2 bg-amber-400">
-              a
+            <div id="selecao-solucao" className="flex justify-center items-center w-full lg:col-start-4 lg:col-span-2">
+              <Etapas />
             </div>
           </main>
         </section>
