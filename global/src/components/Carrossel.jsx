@@ -61,7 +61,7 @@ const Carrossel = ({ itens }) => {
         onClick={() => mover(-1)}
         disabled={indiceAtivo === 0}
         aria-label="Card anterior"
-        className="absolute left-0 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full bg-white text-gray-800 shadow-md ring-1 ring-black/5 transition hover:bg-gray-100 hover:scale-105 disabled:opacity-40 disabled:hover:scale-100 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 cursor-pointer"
+        className="absolute left-0 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-md ring-1 ring-black/5 dark:ring-white/10 transition hover:bg-gray-100 dark:hover:bg-gray-700 hover:scale-105 disabled:opacity-40 disabled:hover:scale-100 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 cursor-pointer"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true" className="size-6">
           <path d="m15 18-6-6 6-6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -72,7 +72,7 @@ const Carrossel = ({ itens }) => {
         onClick={() => mover(1)}
         disabled={indiceAtivo === itens.length - 1}
         aria-label="Próximo card"
-        className="absolute right-0 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full bg-white text-gray-800 shadow-md ring-1 ring-black/5 transition hover:bg-gray-100 hover:scale-105 disabled:opacity-40 disabled:hover:scale-100 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 cursor-pointer"
+        className="absolute right-0 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-md ring-1 ring-black/5 dark:ring-white/10 transition hover:bg-gray-100 dark:hover:bg-gray-700 hover:scale-105 disabled:opacity-40 disabled:hover:scale-100 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 cursor-pointer"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true" className="size-6">
           <path d="m9 18 6-6-6-6" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -90,7 +90,7 @@ const Carrossel = ({ itens }) => {
             className={`transition-all duration-300 rounded-full cursor-pointer ${
               indiceAtivo === index
                 ? "w-8 h-2.5 bg-verde-agua"
-                : "w-2.5 h-2.5 bg-gray-300 hover:bg-gray-400"
+                : "w-2.5 h-2.5 bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600"
             }`}
           />
         ))}
