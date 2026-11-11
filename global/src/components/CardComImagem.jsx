@@ -1,6 +1,6 @@
 const CardComImagem = ({ titulo, subtitulo, imagem, altImagem }) => {
     return (
-        <article className="flex min-h-96 w-full flex-col overflow-hidden rounded-2xl bg-white text-left shadow-sm ring-1 ring-black/5">
+        <article className="flex min-h-75 w-85 flex-col overflow-hidden rounded-2xl bg-white text-left shadow-sm ring-1 ring-black/5">
             <div className="flex h-48 w-full shrink-0 items-center justify-center bg-emerald-50 p-5">
                 {imagem && <img src={imagem} alt={altImagem || ""} className="h-full w-full object-contain" />}
             </div>
