@@ -5,10 +5,10 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-1/2 -translate-x-1/2 z-50 flex w-[70%] max-w-5xl items-center justify-between px-8 py-3.5 mt-5 rounded-2xl bg-white/75 dark:bg-gray-900/80 backdrop-blur-md shadow-sm ring-1 ring-black/5 dark:ring-white/10 transition-all">
-        <div id="logo" className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Logo</div>
-        <article className="flex items-center">
-          <nav className="flex items-center gap-10 lg:gap-14 font-medium text-sm lg:text-base text-gray-600 dark:text-gray-300">
+      <header className="fixed left-1/2 top-3 z-50 flex w-[calc(100%-1.5rem)] max-w-5xl -translate-x-1/2 items-center justify-between rounded-2xl bg-white/90 px-3 py-3 shadow-sm ring-1 ring-black/5 backdrop-blur-md transition-all dark:bg-gray-900/90 dark:ring-white/10 sm:top-5 sm:px-6 sm:py-3.5">
+        <div id="logo" className="hidden shrink-0 text-base font-bold tracking-tight text-gray-900 dark:text-white sm:block sm:text-lg">Logo</div>
+        <article className="flex flex-1 items-center justify-center sm:flex-none">
+          <nav className="flex items-center gap-3 whitespace-nowrap font-medium text-xs text-gray-600 dark:text-gray-300 sm:gap-6 sm:text-sm lg:gap-10 lg:text-base">
             <a href="#landing" className="hover:text-gray-900 dark:hover:text-white transition-colors">Início</a>
             <a href="#dor" className="hover:text-gray-900 dark:hover:text-white transition-colors">Dor</a>
             <a href="#solucao" className="hover:text-gray-900 dark:hover:text-white transition-colors">Solução</a>
@@ -20,7 +20,7 @@ const Header = () => {
           type="button"
           onClick={alternarTema}
           aria-label="Alternar tema claro e escuro"
-          className={`relative flex h-8 w-16 cursor-pointer items-center justify-between rounded-full p-1 transition-colors duration-300 ring-1 ring-black/10 dark:ring-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 ${
+          className={`relative hidden h-8 w-16 shrink-0 cursor-pointer items-center justify-between rounded-full p-1 transition-colors duration-300 ring-1 ring-black/10 dark:ring-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 sm:flex ${
             escuro ? "bg-gray-800" : "bg-gray-200/90"
           }`}
         >
