@@ -1,13 +1,13 @@
 import "./App.css";
 import CardComImagem from "./components/CardComImagem.jsx";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Etapas from "./components/Etapas.jsx";
+import IntroBueiro from "./components/IntroBueiro.jsx";
 
 function App() {
   return (
     <>
-      <Header />
+      <IntroBueiro/>
       <main id="landing" className="bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-gray-950 dark:text-gray-100">
         <div className="grid min-h-screen grid-cols-1 lg:grid-cols-2">
           <article className="flex min-h-[75vh] items-center justify-center px-5 pb-12 pt-28 sm:px-8 lg:min-h-screen lg:px-16">
