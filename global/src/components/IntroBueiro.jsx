@@ -265,7 +265,7 @@ function Scene({ progress }) {
  *  Componente da seção
  * ------------------------------------------------------------------ */
 
-export default function IntroBueiro() {
+export default function IntroBueiro({ onConcluida }) {
   const wrapperRef = useRef(null);
   const overlayRef = useRef(null);
   const hintRef = useRef(null);
@@ -279,13 +279,15 @@ export default function IntroBueiro() {
       onUpdate: (self) => {
         const p = self.progress;
         progress.current = p;
+        onConcluida?.(p >= 1);
         // DOM direto (sem useState) para não re-renderizar a cada scroll
         overlayRef.current.style.opacity = range(p, PHASE.fade);
         hintRef.current.style.opacity = 1 - range(p, [0, 0.06]);
       },
     });
+    onConcluida?.(trigger.progress >= 1);
     return () => trigger.kill();
-  }, []);
+  }, [onConcluida]);
 
   return (
     <section

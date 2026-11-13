@@ -5,16 +5,16 @@ const CardEtapa = ({ titulo, subtitulo, ativo, onClick }) => (
     type="button"
     aria-pressed={ativo}
     onClick={onClick}
-    className={`w-full cursor-pointer rounded-2xl p-5 text-left shadow-sm ring-1 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700 dark:focus-visible:outline-emerald-300 ${
+    className={`w-full cursor-pointer rounded-2xl p-5 text-left shadow-sm ring-1 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300 ${
       ativo
-        ? "bg-white ring-emerald-700 shadow-md dark:bg-gray-800 dark:ring-emerald-400"
-        : "bg-white/60 ring-emerald-900/10 hover:bg-white hover:ring-emerald-700/40 dark:bg-gray-900/50 dark:ring-white/10 dark:hover:bg-gray-800"
+        ? "bg-black ring-emerald-400 shadow-md"
+        : "bg-black ring-white/10 hover:ring-emerald-300/40"
     }`}
   >
-    <h3 className="text-lg font-bold text-[#16382c] dark:text-emerald-300">
+    <h3 className="text-lg font-bold text-white">
       {titulo}
     </h3>
-    <p className="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+    <p className="mt-2 text-sm leading-relaxed text-white/70">
       {subtitulo}
     </p>
   </button>
@@ -24,8 +24,8 @@ const Etapas = () => {
   const [etapaAtiva, setEtapaAtiva] = useState(1);
 
   return (
-  <section aria-label="Etapas da solução" className="w-full rounded-3xl border border-emerald-900/10 bg-emerald-50/80 p-4 shadow-inner dark:border-emerald-300/10 dark:bg-emerald-950/30 sm:p-5">
-    <h2 className="mb-4 text-left text-3xl font-bold tracking-tight text-[#16382c] dark:text-emerald-300 sm:text-3xl ps-2">
+  <section aria-label="Etapas da solução" className="w-full rounded-3xl border border-white/10 bg-black p-4 shadow-inner sm:p-5">
+    <h2 className="mb-4 text-left text-3xl font-bold tracking-tight text-white sm:text-3xl ps-2">
       Etapas
     </h2>
     <div className="flex flex-col gap-3">
