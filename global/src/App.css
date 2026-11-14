@@ -182,3 +182,26 @@
     border-right-color: var(--border);
   }
 }
+
+.solution-steps-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  box-sizing: border-box;
+}
+
+.solution-steps-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .solution-steps-mobile {
+    display: none;
+  }
+
+  .solution-steps-desktop {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(19rem, 0.8fr);
+    align-items: center;
+    gap: 3rem;
+  }
+}
